@@ -69,7 +69,7 @@ The script creates an alias so you can use terraform just like you would. It's a
 1. Install as described above
 2. Run `terraform apply`
 3. The script will tell you to run `terraform apply` with `-target` set
-4. Run `terraform apply -target=module.my_thing" 
+4. Run `terraform apply -target=module.my_thing`
 5. 💶💶💶
 
 ### What is `-target`? 
