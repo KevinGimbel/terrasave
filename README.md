@@ -102,8 +102,25 @@ You can find out more in the terraform docs in the sections about [the apply com
 
 Of course you'll sometimes want to run apply without a target, for example when bootstrapping a new project. In this case you can execute the script with the `TERRAFORM_SAVE_DISABLE_I_KNOW_WHAT_I_DO` variable set to 1.
 
+
 ```bash
 $ TERRAFORM_SAVE_DISABLE_I_KNOW_WHAT_I_DO=1 terraform apply
+```
+
+You can also export the variable for the current shell in fish or `bash`/`zsh`
+
+`bash` and `zsh`
+
+```bash
+$ export TERRAFORM_SAVE_DISABLE_I_KNOW_WHAT_I_DO=1
+$ terraform apply
+```
+
+And for `fish`
+
+```bash
+$ set -x TERRAFORM_SAVE_DISABLE_I_KNOW_WHAT_I_DO 1
+$ terraform apply
 ```
 
 

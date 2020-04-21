@@ -7,7 +7,9 @@ function terraform
   if string match -q  -- "$argv" "apply"
     if not string match -q -- "$argv" "-target"
       echo "Please run \"terraform apply\" with -target option"
-      return 1
+      if not test -n "$TERRAFORM_SAVE_DISABLE_I_KNOW_WHAT_I_DO"
+        return 1
+      end
     else
       CAN_RUN = 1
     end
