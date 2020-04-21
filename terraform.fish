@@ -11,8 +11,12 @@ function terraform
         return 1
       end
     else
-      CAN_RUN = 1
+      set CAN_RUN 1
     end
+  end
+
+  if test -n "$TERRAFORM_SAVE_DISABLE_I_KNOW_WHAT_I_DO"
+    set CAN_RUN 1
   end
 
   if test $CAN_RUN > 0
