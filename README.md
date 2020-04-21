@@ -38,7 +38,7 @@ Install it by adding the function and alias to a shell config file like `.bashrc
 # ~/.bashrc
 $ cat terraform.bash >> ~/.bashrc
 # OR ~/.bash_profile
-$ cat terraform.bash >> ~/.bashrc
+$ cat terraform.bash >> ~/.bash_profile
 ```
 
 #### Zsh
